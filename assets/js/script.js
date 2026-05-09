@@ -16,6 +16,32 @@ function addNote() {
     addInput.value = '';
     addInputContainer.style.display = 'none';
     displayAddInput.style.display = 'block';
-  }  
- 
+  } 
+}
+
+function displayNotes() {
+  noteList.innerHTML = null;
+  notes.forEach((note, i) => {
+     const container = document.createElement('div');
+    container.className = 'note-container';
+    const p = document.createElement('p');
+    p.className = 'note-content';
+    p.textContent = note;
+    container.append(p);
+    const buttonContainer = document.createElement('div');
+    buttonContainer.className = 'button-container';
+    const editButton = document.createElement('button');
+    editButton.className = 'edit-button';
+    editButton.textContent = 'EDIT';
+    editButton.onclick = () => editNote(i, note);
+    const deleteButton = document.createElement('button');
+    deleteButton.className = 'delete-button';
+    deleteButton.textContent = 'DELETE';
+    deleteButton.onclick = () => deleteNote(i);   
+    buttonContainer.append(editButton);
+    buttonContainer.append(deleteButton);
+    container.append(buttonContainer);
+    noteList.append(container);
+  })  
+  
 }
