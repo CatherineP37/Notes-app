@@ -75,3 +75,32 @@ h1 {
     display: flex;
     justify-content: space-between;
 }
+
+.edit-button, .delete-button {
+    width: 48%;
+    border-radius: 8px;
+    text-align: center;
+    padding: 8px 0;
+    transition-property: background;
+    transition-timing-function: ease-in;
+    transition-duration: .2s;
+    color: #FFFFFF;
+}
+
+.edit-button {
+    background-color: #75B5BB;
+}
+
+.delete-button {
+    background-color: #EC755E;
+}
+
+.edit-button:hover {
+    background-color: #60A1A7;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #D3644F;
+    cursor: pointer;
+}

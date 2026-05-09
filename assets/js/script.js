@@ -43,5 +43,4 @@ function displayNotes() {
     container.append(buttonContainer);
     noteList.append(container);
   })  
-  
 }
