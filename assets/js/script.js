@@ -19,6 +19,12 @@ function addNote() {
   } 
 }
 
+function deleteNote(i) {
+  notes.splice(i, 1);
+  displayNotes();
+}
+
+
 function displayNotes() {
   noteList.innerHTML = null;
   notes.forEach((note, i) => {
