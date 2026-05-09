@@ -24,7 +24,6 @@ function deleteNote(i) {
   displayNotes();
 }
 
-
 function displayNotes() {
   noteList.innerHTML = null;
   notes.forEach((note, i) => {
@@ -49,4 +48,17 @@ function displayNotes() {
     container.append(buttonContainer);
     noteList.append(container);
   })  
+}
+
+function editNote(i, note) {
+  addInputContainer.style.display = 'none';
+  editInputContainer.style.display = 'block';
+  let editInput = document.getElementById('edit_input')
+  editInput.value = note;
+  document.getElementById('edit_button').onclick = () => {
+    let editedNote = editInput.value;
+    notes.splice(i, 1, editedNote);
+    editInputContainer.style.display = 'none';    
+    displayNotes();
+  }  
 }
