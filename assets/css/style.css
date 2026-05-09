@@ -30,6 +30,15 @@ h1 {
     color: #75B5BB;
 }
 
+.show-add-input {
+    background-color: #75B5BB;
+    color: #FFFFFF;
+    width: 30%;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 8px;    
+}
+
 .add-input-container {
     display: none;
     flex-direction: column;
