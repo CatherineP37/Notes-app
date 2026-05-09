@@ -69,3 +69,9 @@ h1 {
 .input-label, .note-content {
     color: #585858;
 }
+
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
