@@ -62,3 +62,11 @@ function editNote(i, note) {
     displayNotes();
   }  
 }
+
+function openAddContainer() {
+  addInputContainer.style.display = 'flex';  
+}
+
+function closeAddContainer() {
+ addInputContainer.style.display = 'none';
+}
