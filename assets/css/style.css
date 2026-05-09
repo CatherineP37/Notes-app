@@ -30,6 +30,12 @@ h1 {
     color: #75B5BB;
 }
 
+.add-input-container {
+    display: none;
+    flex-direction: column;
+    gap: 16px;
+}
+
 #notes {
     width: 100%;
     display: flex;

@@ -14,13 +14,13 @@
         <header>
             <h1>Notes</h1>
             <button class="add-button" onclick="openAddModal()">ADD NOTE</button>
-            <section class = "add-modal">
+            <section class = "add-input-container">
                 <button onclick = "closeAddModal()">CLOSE</button>
                 <label for="note_input" class="input-label" id="modalTitle">Add a note</label>               
                 <input type="text" id="note_input">                
                 <button id="save_button" onclick="addNote()">ADD</button>
             </section>
-             <section class = "edit-modal">
+             <section class = "edit-input-container">
                 <button onclick = "closeEditModal()">CLOSE</button>
                 <label for="note_input" class="input-label" id="modalTitle">Edit your note</label>               
                 <input type="text" id="edit_input">                
