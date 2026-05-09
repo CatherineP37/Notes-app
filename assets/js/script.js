@@ -70,3 +70,7 @@ function openAddContainer() {
 function closeAddContainer() {
  addInputContainer.style.display = 'none';
 }
+
+function closeEditContainer() {
+  editInputContainer.style.display= 'none';
+}
