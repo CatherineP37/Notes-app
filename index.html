@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes app</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+</head>
+<body>
+   
+    <main>
+        <header>
+            <h1>Notes</h1>
+            <button class="add-button" onclick="openAddModal()">ADD NOTE</button>
+            <section class = "add-modal">
+                <button onclick = "closeAddModal()">CLOSE</button>
+                <label for="note_input" class="input-label" id="modalTitle">Add a note</label>               
+                <input type="text" id="note_input">                
+                <button id="save_button" onclick="addNote()">ADD</button>
+            </section>
+             <section class = "edit-modal">
+                <button onclick = "closeEditModal()">CLOSE</button>
+                <label for="note_input" class="input-label" id="modalTitle">Edit your note</label>               
+                <input type="text" id="edit_input">                
+                <button id="edit_button">EDIT</button>
+            </section>
+                     
+        </header>
+        
+        <section>
+
+        </section>        
+    </main>
+				
+	<script src="assets/js/script.js"></script>
+</body>
+</html>
