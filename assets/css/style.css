@@ -30,7 +30,7 @@ h1 {
     color: #75B5BB;
 }
 
-.show-add-input {
+.display-add-input {
     background-color: #75B5BB;
     color: #FFFFFF;
     width: 30%;
@@ -54,4 +54,14 @@ h1 {
     display: flex;
     flex-direction: column;
     gap: 16px;
+}
+
+.note-container {
+    background-color: #FFFFFF;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
