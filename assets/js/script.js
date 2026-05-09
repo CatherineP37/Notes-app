@@ -74,3 +74,5 @@ function closeAddContainer() {
 function closeEditContainer() {
   editInputContainer.style.display= 'none';
 }
+
+document.addEventListener("DOMContentLoaded", displayNotes)
