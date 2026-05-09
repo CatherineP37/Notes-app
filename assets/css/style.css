@@ -29,3 +29,10 @@ h1 {
     text-align: center;
     color: #75B5BB;
 }
+
+#notes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
