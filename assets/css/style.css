@@ -55,6 +55,10 @@ h1 {
 
 .edit-input-container {
     display: none;
+    background-color: #FFFFFF;
+    padding: 1rem;  
+    flex-direction: column;
+    gap: 16px;
 }
 
 #notes {
