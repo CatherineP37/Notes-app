@@ -33,9 +33,9 @@ h1 {
 .display-add-input {
     background-color: #75B5BB;
     color: #FFFFFF;
-    width: 30%;
+    width: 100%;
     text-align: center;
-    padding: 8px 0;
+    padding: 12px 0;
     border-radius: 8px;    
 }
 
