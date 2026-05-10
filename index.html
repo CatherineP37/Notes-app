@@ -14,14 +14,14 @@
         <header>
             <h1>Notes</h1>
             <button class="display-add-input" onclick="openAddContainer()">ADD NOTE</button>
-            <section class = "add-input-container">
-                <button onclick = "closeAddContainer()">CLOSE</button>
+            <section class = "add-input-container">               
+                <button class="close" onclick = "closeAddContainer()">x</button>                
                 <label for="add_input" class="input-label" id="modalTitle">Add a note</label>               
                 <input type="text" id="add_input">                
                 <button onclick="addNote()">ADD</button>
             </section>
              <section class = "edit-input-container">
-                <button onclick = "closeEditContainer()">CLOSE</button>
+                <button class="close" onclick = "closeEditContainer()">x</button>
                 <label for="edit_input" class="input-label" id="modalTitle">Edit your note</label>               
                 <input type="text" id="edit_input">                
                 <button id="edit_button">EDIT</button>

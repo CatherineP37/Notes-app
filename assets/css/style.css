@@ -55,6 +55,12 @@ h1 {
     gap: 16px;
 }
 
+.close {
+    text-align: right;
+    background-color: #FFFFFF;
+    font-size: 1.25rem;
+}
+
 input {
     border: 2px solid #D1D1D1;
     border-radius: 2px;
