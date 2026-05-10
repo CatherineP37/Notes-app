@@ -57,9 +57,11 @@ function editNote(i, note) {
   editInput.value = note;
   document.getElementById('edit_button').onclick = () => {
     let editedNote = editInput.value;
-    notes.splice(i, 1, editedNote);
-    editInputContainer.style.display = 'none';    
-    displayNotes();
+    if(editedNote) {
+      notes.splice(i, 1, editedNote);
+      editInputContainer.style.display = 'none';    
+      displayNotes();
+    }    
   }  
 }
 
