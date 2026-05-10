@@ -52,7 +52,7 @@ function displayNotes() {
 
 function editNote(i, note) {
   addInputContainer.style.display = 'none';
-  editInputContainer.style.display = 'block';
+  editInputContainer.style.display = 'flex';
   let editInput = document.getElementById('edit_input')
   editInput.value = note;
   document.getElementById('edit_button').onclick = () => {

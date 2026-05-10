@@ -47,18 +47,18 @@ h1 {
     gap: 16px;
 }
 
-.add-input-container input {
-    border: 2px solid #D1D1D1;
-    border-radius: 2px;
-    padding: 0.25rem;
-}
-
 .edit-input-container {
     display: none;
     background-color: #FFFFFF;
     padding: 1rem;  
     flex-direction: column;
     gap: 16px;
+}
+
+input {
+    border: 2px solid #D1D1D1;
+    border-radius: 2px;
+    padding: 0.25rem;
 }
 
 #notes {
