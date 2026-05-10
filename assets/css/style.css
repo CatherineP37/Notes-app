@@ -5,9 +5,10 @@
     box-sizing: border-box;	
 }
 
-body {
+html {
 	font-family: arial;
     background-color: #F8EADC;
+    color: #4D4D4D;
 }
 
 main {    
