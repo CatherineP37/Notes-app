@@ -41,6 +41,7 @@ h1 {
 
 .add-input-container {
     display: none;
+    background-color: #FFFFFF;    
     flex-direction: column;
     gap: 16px;
 }
