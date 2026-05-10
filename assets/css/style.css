@@ -31,13 +31,20 @@ h1 {
     color: #75B5BB;
 }
 
-.display-add-input {
+.display-add-input, .add-button, #edit_button {
     background-color: #75B5BB;
     color: #FFFFFF;
     width: 100%;
     text-align: center;
     padding: 12px 0;
-    border-radius: 8px;    
+    border-radius: 8px;
+    transition-property: background;
+    transition-timing-function: ease-in;
+    transition-duration: .3s;  
+}
+
+.display-add-input:hover, .add-button:hover, #edit_button:hover {
+    background-color: #659DA3;    
 }
 
 .add-input-container {
