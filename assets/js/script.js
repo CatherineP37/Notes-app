@@ -25,7 +25,7 @@ function deleteNote(i) {
 }
 
 function displayNotes() {
-  noteList.innerHTML = null;
+  notesContainer.innerHTML = null;
   notes.forEach((note, i) => {
      const container = document.createElement('div');
     container.className = 'note-container';
@@ -46,7 +46,7 @@ function displayNotes() {
     buttonContainer.append(editButton);
     buttonContainer.append(deleteButton);
     container.append(buttonContainer);
-    noteList.append(container);
+    notesContainer.append(container);
   })  
 }
 
