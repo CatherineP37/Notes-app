@@ -7,6 +7,11 @@ const editInput = document.getElementById('edit_input');
 const editButton = document.getElementById('edit_button');
 const notesContainer = document.getElementById('notes_container');
 
+function load() {
+  const savedNotes = localStorage.getItem('notesArray')
+  return savedNotes ? JSON.parse(savedNotes) : []
+}
+
 function addNote() {
   displayAddInput.style.display = 'none';
   let addInputValue = addInput.value;
