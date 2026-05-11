@@ -19,6 +19,10 @@ function addNote() {
   } 
 }
 
+function saveNotes() {
+  localStorage.setItem('notesArray', JSON.stringify(notes))
+}
+
 function deleteNote(i) {
   notes.splice(i, 1);
   displayNotes();
