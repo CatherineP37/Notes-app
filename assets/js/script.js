@@ -17,6 +17,7 @@ function addNote() {
   let addInputValue = addInput.value;
   if(addInputValue) {
     notes.push(addInputValue);
+    saveNotes();
     displayNotes();
     addInput.value = '';
     addInputContainer.style.display = 'none';
@@ -30,6 +31,7 @@ function saveNotes() {
 
 function deleteNote(i) {
   notes.splice(i, 1);
+  saveNotes();
   displayNotes();
 }
 
