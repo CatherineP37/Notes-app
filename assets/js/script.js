@@ -88,4 +88,7 @@ function closeEditContainer() {
   editInputContainer.style.display= 'none';
 }
 
-document.addEventListener("DOMContentLoaded", displayNotes)
+document.addEventListener("DOMContentLoaded", function() {
+  notes = load();
+  displayNotes();
+})
